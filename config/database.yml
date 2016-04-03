@@ -22,4 +22,10 @@ test:
 
 production:
   <<: *default
-  database: d88fl9hen657lk
+  development:
+  adapter: postgresql
+  encoding: unicode
+  database: d6q7ir6ajli6r3
+  pool: 5
+  username: rbrfjbcnhjbyes
+  password: r3JSsxph1_Zm_UvIctCDqK6LgR
