@@ -1,0 +1,9 @@
+<h1>Edit Book</h1>
+<%= simple_form_for @book, :html => { :multipart => true } do |f| %>
+	<%= f.input :title, label: "Book Title" %>
+	<%= f.input :author, label: "Author" %>
+	<%= f.input :description, label: "Descripion" %>
+	<%= f.select :category_id, @categories %> <br>
+	<%= f.file_field :book_img %>
+	<%= f.button :submit, class: "btn-custom2" %>
+<% end %>

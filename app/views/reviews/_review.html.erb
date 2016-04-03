@@ -1,0 +1,12 @@
+<div class="review-rating" data-score="<%= review.rating %>"></div>
+<p>By: <%= review.user.email %></p>
+<p><%= review.comment %></p>
+
+<% if user_signed_in? %>
+	<% if review.user_id == current_user.id %>
+		<button type="button" class="btn btn-default"><%= link_to "Edit", edit_book_review_path(review.book, review) %></button>
+		<button type="button" class="btn btn-default"><%= link_to "Delete", book_review_path(review.book, review), method: :delete, data: {confirm: "Are you sure you want to delete your review?"} %>
+		</button>
+	<% end %>
+<% end %>
+<hr>
