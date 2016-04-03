@@ -103,7 +103,10 @@
 		readOnly: true,
 		path: '/assets/',
 		score: function() {
-			return $(this).attr('data-score')
+			return $(this).attr('data-score'),
+			if $(this).attr('data-score' = 0){
+				path: '/assets/off.png',
+			}
 		}
 	});
 </script>
