@@ -3,9 +3,7 @@
 
 
 <%= simple_form_for ([@book, @review]) do |f| %>
-	<div id="rating-form">
-		<label>Rating</label>
-	</div>
+	<%= f.input: rating %>
 	<%= f.input :comment %>
 	<%= f.button :submit %>
 <% end %>

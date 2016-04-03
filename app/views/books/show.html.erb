@@ -47,7 +47,7 @@
 		<h2 style="font-weight: bold;"><%= @book.title %></h2>
 		<h3 style="font-weight: 400;">Written By: <%= @book.author %></h3>
 		<p>Average Rating based on <%= @book.reviews.count %> reviews</p>
-		<div class="average-review-rating" data-score="<%= @average_review %>" style="margin-bottom: 15px; margin-top: 5px;"></div>
+		<p><%= @average_review %></p>
 		<h4><small>Category:</small> <%= @book.category.name %></h4>
 		<p>Uploaded by: <%= @book.user.email %></p>
 
@@ -103,10 +103,7 @@
 		readOnly: true,
 		path: '/assets/',
 		score: function() {
-			return $(this).attr('data-score'),
-			if $(this).attr('data-score' = 0){
-				path: '/assets/off.png',
-			}
+			return $(this).attr('data-score')
 		}
 	});
 </script>
