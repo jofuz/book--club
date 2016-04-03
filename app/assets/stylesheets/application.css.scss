@@ -16,6 +16,9 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 
 body {
@@ -146,4 +149,5 @@ footer {
   border-top: 2px solid #CCC;
   width: 100%;
   text-align: left;
+  font-weight: lighter;
 }

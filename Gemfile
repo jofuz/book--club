@@ -17,6 +17,7 @@ gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'rename', '~> 1.0', '>= 1.0.2'
 gem 'bundler', '~> 1.11', '>= 1.11.2'
+gem 'font-awesome-sass'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 
