@@ -47,7 +47,8 @@
 		<h2 style="font-weight: bold;"><%= @book.title %></h2>
 		<h3 style="font-weight: 400;">Written By: <%= @book.author %></h3>
 		<p>Average Rating based on <%= @book.reviews.count %> reviews</p>
-		<div class="average-review-rating" data-score="<%= @average_review %>" style="margin-bottom: 15px; margin-top: 5px;"></div>
+		<div class="average-review-rating" data-score="<%= @average_review %>" style="margin-bottom: 15px; margin-top: 5px;"><%= review.rating %>
+</div>
 		<h4><small>Category:</small> <%= @book.category.name %></h4>
 		<p>Uploaded by: <%= @book.user.email %></p>
 
@@ -87,7 +88,7 @@
 		<p><%= render @book.reviews %></p>
 	</div>
 </div>
-
+<!--
 <script>
 	$('.review-rating').raty({
 		readOnly: true,
@@ -107,3 +108,5 @@
 		}
 	});
 </script>
+
+-->
