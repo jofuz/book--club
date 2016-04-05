@@ -1,5 +1,6 @@
-<h1>Edit Book</h1>
 <%= simple_form_for @book, :html => { :multipart => true } do |f| %>
+	<h1>Edit Book</h1>
+
 	<%= f.input :title, label: "Book Title" %>
 	<%= f.input :author, label: "Author" %>
 	<%= f.input :description, label: "Descripion" %>
