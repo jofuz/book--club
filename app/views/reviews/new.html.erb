@@ -13,16 +13,9 @@
 	.left h3, h4 {
 		margin: 0px;
 	}
-	.middle {
-		width: 50%;
-		margin-left: 2.5%;
-		display: inline-block;
-		float: left;
-		padding: 5px;
-		text-align: left;
-	}
+
 	.right {
-		width: 25%;
+		width: 77.5%;
 		display: inline-block;;
 		float: left;
 		padding: 5px;
@@ -32,6 +25,12 @@
 		margin: 0px;
 		margin-bottom: 20px;
 	}
+	
+	form {
+		width: 100%;
+		margin-left: 0%;
+	}
+	
 	@media screen and (max-width: 768px) {
 		.left {
 			width: 100%;
@@ -63,7 +62,7 @@
 	<img src="<%= @book.book_img %>" style="max-height: 280px"/>
 </div>
 
-<div class="middle">
+<div class="right">
 	<form>
 		<h1>Add Review</h1>
 		<h2><small>Book: </small><%= @book.title %> <br/><small>Author:</small><%= @book.author %></h2>
