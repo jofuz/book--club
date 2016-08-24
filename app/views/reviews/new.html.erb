@@ -1,3 +1,64 @@
+<style type="text/css">
+	.top {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.left {
+		width: 20%;
+		display: inline-block;
+		float: left;
+		padding: 5px;
+		margin-top: 5px;
+	}
+	.left h3, h4 {
+		margin: 0px;
+	}
+	.middle {
+		width: 50%;
+		margin-left: 2.5%;
+		display: inline-block;
+		float: left;
+		padding: 5px;
+		text-align: left;
+	}
+	.right {
+		width: 25%;
+		display: inline-block;;
+		float: left;
+		padding: 5px;
+		margin-left: 2.5%;
+	}
+	.right h3 {
+		margin: 0px;
+		margin-bottom: 20px;
+	}
+	@media screen and (max-width: 768px) {
+		.left {
+			width: 100%;
+			display: block;
+			float: left;
+			padding: 5px;
+			margin-top: 5px;
+		}
+		.middle {
+			width: 100%;
+			margin-left: 0%;
+			display: block;
+			float: left;
+			padding: 5px;
+			text-align: left;
+		}
+		.right {
+			width: 100%;
+			display: block;
+			float: left;
+			padding: 5px;
+			margin-left: 0%;
+			margin-top: 10px;
+		}
+	}
+</style>
+
 <div class="left">
 	<img src="<%= @book.book_img %>" style="max-height: 280px"/>
 </div>
