@@ -1,5 +1,11 @@
-<form>
-	<h1>New Review</h1>
-	<h2><small>Book:</small><%= @book.title %> | <small>Author:</small><%= @book.author %></h2>
-</form>
-<%= render 'form' %>
+<div class="left">
+	<img src="<%= @book.book_img %>" style="max-height: 280px"/>
+</div>
+
+<div class="right">
+	<form>
+		<h1>Add Review</h1>
+		<h2><small>Book: </small><%= @book.title %> <br/><small>Author:</small><%= @book.author %></h2>
+	</form>
+	<%= render 'form' %>
+</div>
