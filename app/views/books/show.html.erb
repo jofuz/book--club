@@ -73,6 +73,8 @@
 		<h3 style="font-weight: 400;">Written By: <%= @book.author %></h3>
 		<p>Average Rating based on <%= @book.reviews.count %> reviews</p>
 		<b><%= @average_review %></b>
+		<div class="review-rating" data-score="<%= review.rating %>"></div>
+
 		<h4><small>Category:</small> <%= @book.category.name %></h4>
 		<p>Uploaded by: <%= @book.user.email %></p>
 
